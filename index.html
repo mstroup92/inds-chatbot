@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDS Chatbot - UCCS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        
+        .header {
+            background-color: #0C2340;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            color: #CFB87C;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .info-section {
+            margin-bottom: 30px;
+        }
+        
+        .info-section h2 {
+            color: #0C2340;
+            margin-bottom: 15px;
+        }
+        
+        .info-section p {
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .cta-box {
+            background-color: #f0f7ff;
+            border-left: 4px solid #0C2340;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .cta-box h3 {
+            color: #0C2340;
+            margin-bottom: 10px;
+        }
+        
+        /* Dialogflow messenger customization */
+        df-messenger {
+            --df-messenger-bot-message: #0C2340;
+            --df-messenger-button-titlebar-color: #0C2340;
+            --df-messenger-chat-background-color: #fafafa;
+            --df-messenger-font-color: white;
+            --df-messenger-send-icon: #CFB87C;
+            --df-messenger-user-message: #CFB87C;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Interdisciplinary Studies (INDS)</h1>
+        <p>University of Colorado Colorado Springs</p>
+    </div>
+    
+    <div class="container">
+        <div class="info-section">
+            <h2>About INDS</h2>
+            <p>The Interdisciplinary Studies program allows you to merge multiple interests to create a unique degree. INDS provides a path for students with specific personal or professional interests that cannot be met within traditional degree structures.</p>
+        </div>
+        
+        <div class="cta-box">
+            <h3>💬 Chat with our INDS Assistant</h3>
+            <p>Click the chat button in the bottom-right corner to learn about eligibility, requirements, and how to get started!</p>
+        </div>
+        
+        <div class="info-section">
+            <h2>Why Choose INDS?</h2>
+            <p><strong>Flexibility:</strong> Design a major around your specific interests</p>
+            <p><strong>Integration:</strong> Combine knowledge from multiple fields</p>
+            <p><strong>Career Preparation:</strong> Develop unique skills for the modern job market</p>
+        </div>
+        
+        <div class="info-section">
+            <h2>Contact</h2>
+            <p><strong>Dr. Janice Thorpe</strong><br>
+            INDS Program Director<br>
+            Email: [INSERT EMAIL]</p>
+        </div>
+    </div>
+
+    <!-- PASTE YOUR DIALOGFLOW MESSENGER CODE HERE -->
+   <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="Change_Major_Interdisciplinary_Studies"
+  agent-id="61cca58f-219f-4889-b836-c269de98e256"
+  language-code="en"
+></df-messenger>
+
+</body>
+</html>
